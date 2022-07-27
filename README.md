@@ -1,6 +1,6 @@
-# my_first_flutter
+# Book Flight
 
-A new Flutter project.
+A flight ticketing Flutter project.
 
 ## Getting Started
 
