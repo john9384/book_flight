@@ -1,7 +1,6 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:my_first_flutter/screens/home.dart';
+import 'package:my_first_flutter/screens/home/home.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
@@ -19,9 +18,9 @@ class _BottomBarState extends State<BottomBar> {
     const Text("Profile")
   ];
 
-  void _onItemTapped(int index){
-    setState((){
-      _currentIndex=index;
+  void _onItemTapped(int index) {
+    setState(() {
+      _currentIndex = index;
     });
   }
 
@@ -39,7 +38,7 @@ class _BottomBarState extends State<BottomBar> {
         unselectedFontSize: 12,
         selectedItemColor: Colors.blueGrey,
         unselectedItemColor: const Color(0xFF526480),
-        onTap: (value){
+        onTap: (value) {
           _onItemTapped(value);
         },
         items: const [

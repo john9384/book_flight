@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_flutter/screens/bottom_bar.dart';
+import 'package:my_first_flutter/components/bottom_bar.dart';
 import 'package:my_first_flutter/utils/app_styles.dart';
 
 void main() {
