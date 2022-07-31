@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:my_first_flutter/screens/home/header.dart';
+import 'package:my_first_flutter/screens/home/hotels_section.dart';
 import 'package:my_first_flutter/screens/home/ticket_section.dart';
 import 'package:my_first_flutter/utils/app_styles.dart';
 
@@ -12,7 +13,13 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
         backgroundColor: CustomStyles.bgColor,
         body: ListView(
-          children: const [HomeHeader(), Gap(40), UpcomingTickets()],
+          children: const [
+            HomeHeader(),
+            Gap(40),
+            UpcomingTickets(),
+            Gap(20),
+            Hotels()
+          ],
         ));
   }
 }
