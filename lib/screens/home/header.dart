@@ -2,6 +2,7 @@ import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:my_first_flutter/utils/app_layout.dart';
 
 import '../../utils/app_styles.dart';
 
@@ -27,8 +28,8 @@ class HomeHeader extends StatelessWidget {
                 ],
               ),
               Container(
-                height: 50,
-                width: 50,
+                height: AppLayout.getHeight(50),
+                width: AppLayout.getWidth(50),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     image: const DecorationImage(

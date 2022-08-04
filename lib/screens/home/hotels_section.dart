@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:my_first_flutter/components/hotels_card.dart';
+import 'package:my_first_flutter/utils/app_layout.dart';
 import 'package:my_first_flutter/utils/hotel_lists.dart';
 import '../../utils/app_styles.dart';
 
@@ -13,7 +14,7 @@ class Hotels extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.all(10),
+          padding: EdgeInsets.symmetric(horizontal: AppLayout.getWidth(20)),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

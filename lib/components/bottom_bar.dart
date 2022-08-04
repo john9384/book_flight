@@ -1,6 +1,7 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:my_first_flutter/screens/home/home.dart';
+import 'package:my_first_flutter/screens/home/screen.dart';
+import 'package:my_first_flutter/screens/search/screen.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
@@ -13,7 +14,7 @@ class _BottomBarState extends State<BottomBar> {
   int _currentIndex = 0;
   static final List<Widget> _widgetOptions = <Widget>[
     const HomeScreen(),
-    const Text("Search"),
+    const SearchScreen(),
     const Text("Tickets"),
     const Text("Profile")
   ];

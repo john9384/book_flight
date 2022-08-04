@@ -12,9 +12,9 @@ class TicketView extends StatelessWidget {
     final size = AppLayout.getSize(context);
     return SizedBox(
       width: size.width * 0.85,
-      height: 200,
+      height: AppLayout.getHeight(200),
       child: Container(
-        margin: const EdgeInsets.only(right: 16),
+        margin: EdgeInsets.only(right: AppLayout.getWidth(16)),
         child: Column(children: [
           Container(
               decoration: const BoxDecoration(
@@ -37,7 +37,8 @@ class TicketView extends StatelessWidget {
                           child: Stack(
                         children: [
                           SizedBox(
-                              height: 24,
+                              height:
+                                  AppLayout.getHeight(AppLayout.getHeight(20)),
                               child: LayoutBuilder(
                                 builder: (BuildContext context,
                                     BoxConstraints constraints) {
@@ -100,10 +101,10 @@ class TicketView extends StatelessWidget {
           Container(
             color: CustomStyles.orangeColor,
             child: Row(children: [
-              const SizedBox(
-                  height: 20,
-                  width: 10,
-                  child: DecoratedBox(
+              SizedBox(
+                  height: AppLayout.getHeight(20),
+                  width: AppLayout.getWidth(10),
+                  child: const DecoratedBox(
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(
@@ -131,10 +132,10 @@ class TicketView extends StatelessWidget {
                   },
                 ),
               )),
-              const SizedBox(
-                  height: 20,
-                  width: 10,
-                  child: DecoratedBox(
+              SizedBox(
+                  height: AppLayout.getHeight(20),
+                  width: AppLayout.getWidth(10),
+                  child: const DecoratedBox(
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(

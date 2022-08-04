@@ -2,7 +2,7 @@ List<Map<String, dynamic>> hotelList = [
   {
     'image': 'assets/images/alexander-kaunas-67-sOi7mVIk-unsplash.jpg',
     'unsplash_author':
-        'Photo by <a href="https://unsplash.com/@akaunas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Alexander Kaunas</a> on <a href="https://unsplash.com/s/photos/hotel-room?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
+        'Photo by <a href="https://unsplash.com/@akaunas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Kaunas</a> on <a href="https://unsplash.com/s/photos/hotel-room?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
     'place': 'Sprite Hotel',
     'destination': 'London',
     'price': '\$85/night',

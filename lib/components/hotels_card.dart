@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:my_first_flutter/utils/app_layout.dart';
 
 import '../utils/app_styles.dart';
 
@@ -12,8 +13,8 @@ class HotelsCard extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(right: 16),
       child: SizedBox(
-        height: 300,
-        width: 220,
+        height: AppLayout.getHeight(300),
+        width: AppLayout.getWidth(220),
         child: Container(
           padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
@@ -27,8 +28,8 @@ class HotelsCard extends StatelessWidget {
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Container(
-              height: 160,
-              width: 180,
+              height: AppLayout.getHeight(160),
+              width: AppLayout.getWidth(180),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
