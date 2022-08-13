@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../components/ticket_view.dart';
+import '../../components/ticket_card.dart';
+import '../../utils/app_layout.dart';
 import '../../utils/app_styles.dart';
 
 class UpcomingTickets extends StatelessWidget {
@@ -9,6 +10,7 @@ class UpcomingTickets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = AppLayout.getSize(context);
     return Column(
       children: [
         Padding(
@@ -32,10 +34,27 @@ class UpcomingTickets extends StatelessWidget {
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           padding: const EdgeInsets.only(left: 20),
-          child: Row(children: const [
-            TicketView(),
-            TicketView(),
-            TicketView(),
+          child: Row(children: [
+            Container(
+              width: size.width * 0.85,
+              margin: EdgeInsets.only(right: AppLayout.getWidth(16)),
+              child: TicketCard(),
+            ),
+            Container(
+              width: size.width * 0.85,
+              margin: EdgeInsets.only(right: AppLayout.getWidth(16)),
+              child: TicketCard(),
+            ),
+            Container(
+              width: size.width * 0.85,
+              margin: EdgeInsets.only(right: AppLayout.getWidth(16)),
+              child: TicketCard(),
+            ),
+            Container(
+              width: size.width * 0.85,
+              margin: EdgeInsets.only(right: AppLayout.getWidth(16)),
+              child: TicketCard(),
+            ),
           ]),
         )
       ],
