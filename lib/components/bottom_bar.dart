@@ -1,6 +1,7 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/screens/home/screen.dart';
+import 'package:my_first_flutter/screens/profile/screen.dart';
 import 'package:my_first_flutter/screens/search/screen.dart';
 import 'package:my_first_flutter/screens/ticket/screen.dart';
 
@@ -17,7 +18,7 @@ class _BottomBarState extends State<BottomBar> {
     const HomeScreen(),
     const SearchScreen(),
     const TicketScreen(),
-    const Text("Profile")
+    const ProfileScreen()
   ];
 
   void _onItemTapped(int index) {

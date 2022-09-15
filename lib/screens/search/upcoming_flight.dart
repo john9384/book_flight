@@ -17,9 +17,7 @@ class UpcomingFlightsSection extends StatelessWidget {
           children: [
             Text("Upcoming Flights", style: CustomStyles.headlineStyle2),
             InkWell(
-              onTap: () {
-                print("Clicked View all");
-              },
+              onTap: () {},
               child: Text("View All",
                   style: CustomStyles.textStyle
                       .copyWith(color: CustomStyles.primaryColor)),

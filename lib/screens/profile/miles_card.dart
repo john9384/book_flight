@@ -3,13 +3,13 @@ import 'package:gap/gap.dart';
 
 import '../../utils/app_styles.dart';
 
-class DetailSection extends StatelessWidget {
+class MilesCard extends StatelessWidget {
   final String topLeftText;
   final String bottomLeftText;
   final String topRightText;
   final String bottomRightText;
   final Widget? centerWidget;
-  const DetailSection(
+  const MilesCard(
       {Key? key,
       this.centerWidget = const SizedBox.shrink(),
       required this.topRightText,
@@ -21,7 +21,7 @@ class DetailSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(left: 16, top: 10, right: 16, bottom: 16),
+      // padding: const EdgeInsets.only(left: 16, top: 10, right: 16, bottom: 16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

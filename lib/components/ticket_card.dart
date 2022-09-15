@@ -9,7 +9,6 @@ class TicketCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = AppLayout.getSize(context);
     return SizedBox(
       width: double.infinity,
       height: AppLayout.getHeight(200),
